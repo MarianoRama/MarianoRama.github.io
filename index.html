@@ -164,7 +164,8 @@
 
   /* ---------- HERO ---------- */
   .hero {
-    padding: 96px 0 64px;
+    padding-top: 96px;
+    padding-bottom: 64px;
     border-bottom: none;
   }
   .hero .eyebrow { margin-bottom: 22px; }
@@ -510,6 +511,15 @@
     nav.links { display: none; }
     .specsheet { grid-template-columns: repeat(2, 1fr); }
     .specsheet div:nth-child(2) { border-right: 1px solid var(--line); }
+  }
+
+  @media (max-width: 480px) {
+    .navrow { gap: 8px; }
+    .brand span { display: none; }
+    .navr-actions { gap: 8px; }
+    .navr-actions .btn.ghost { padding: 8px 10px; font-size: 12px; }
+    .langtoggle button { padding: 6px 8px; font-size: 11px; }
+    .contact-links a { flex-wrap: wrap; row-gap: 4px; }
   }
 </style>
 
